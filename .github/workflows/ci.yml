@@ -1,0 +1,33 @@
+name: Java CI with Maven
+
+# Kab ye workflow chalega
+on:
+  push:                    # jab code main branch me push ho
+    branches: [ "main" ]
+  pull_request:            # ya PR banega main branch ke liye
+    branches: [ "main" ]
+
+# Jobs define karna
+jobs:
+  build:
+    runs-on: ubuntu-latest  # GitHub ke server pe chalega
+
+    steps:
+      # Step 1: Code checkout
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Java setup
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # Step 3: Build project
+      - name: Build with Maven
+        run: mvn clean install -DskipTests
+
+      # Step 4: Run Tests
+      - name: Run Tests
+        run: mvn test
