@@ -23,8 +23,8 @@ jobs:
           distribution: 'temurin'
 
       # Step 3: Install custom jar
-      - name: Install custom jar
-        run: mvn install:install-file -Dfile=libs/common_utillity-0.0.1.jar -DgroupId=com.mapit.igrs -DartifactId=common_utillity -Dversion=0.0.1 -Dpackaging=jar
+      #- name: Install custom jar
+      #  run: mvn install:install-file -Dfile=libs/common_utillity-0.0.1.jar -DgroupId=com.mapit.igrs -DartifactId=common_utillity -Dversion=0.0.1 -Dpackaging=jar
 
       # Step 4: Build project
       - name: Build with Maven
