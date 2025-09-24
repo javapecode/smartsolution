@@ -79,11 +79,11 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>com.mapit.igrs</groupId>
 			<artifactId>common_utillity</artifactId>
 			<version>0.0.1</version>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>
