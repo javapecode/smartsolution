@@ -62,12 +62,12 @@ public class UserController {
 		}
 
 	}
-	  @DeleteMapping("/delete/{id}")
-	    public ResponseEntity<Boolean> deleteRecord(@PathVariable int id) {
-	        boolean isDeleted = true; 
-
-	        return ResponseEntity.ok(isDeleted);
-	    }
-	
+//	  @DeleteMapping("/delete/{id}")
+//	    public ResponseEntity<Boolean> deleteRecord(@PathVariable int id) {
+//	        boolean isDeleted = true; 
+//
+//	        return ResponseEntity.ok(isDeleted);
+//	    }
+//	
 	
 }
